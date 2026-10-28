@@ -1,0 +1,20 @@
+\begin{tabular}{ll}
+\toprule
+Hyperparameter & Value \\
+\midrule
+Image resolution & 64$\times$64 (grayscale) \\
+Training images & 5216 (train) \\
+Validation images & 624 (test) \\
+Latent dimension & 128 \\
+Encoder channels & 32 / 64 / 128 / 256 \\
+Parameters & 2.96M \\
+Reconstruction loss & BCE \\
+KL weight $\beta$ (warm-up) & 1.0 (10 epochs) \\
+Optimizer & Adam, lr=0.001, wd=0 \\
+LR schedule & cosine \\
+Batch size & 128 \\
+Epochs & 150 \\
+Augmentation & none \\
+Seed & 0 \\
+\bottomrule
+\end{tabular}

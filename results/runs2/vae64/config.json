@@ -1,0 +1,33 @@
+{
+  "data_root": "data",
+  "out": "runs/vae64",
+  "cache_dir": "cache",
+  "train_split": "train",
+  "val_split": "test",
+  "image_size": 64,
+  "latent_dim": 128,
+  "base_channels": 32,
+  "epochs": 150,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "lr_schedule": "cosine",
+  "beta": 1.0,
+  "kl_warmup_epochs": 10,
+  "recon_loss": "bce",
+  "hflip": false,
+  "sample_every": 10,
+  "num_workers": 2,
+  "seed": 0,
+  "device": "cuda",
+  "n_train": 5216,
+  "n_val": 624,
+  "n_params": 2955905,
+  "encoder_channels": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "iters_per_epoch": 40
+}
